@@ -494,7 +494,7 @@ on post-fs-data
 service vendor.charger /charger
     class charger
     group log
-    seclabel u:r:charger:s0
+    #seclabel u:r:charger:s0
     disabled
     
 # Allow usb charging to be disabled peristently
@@ -572,7 +572,7 @@ service vendor.start_hci_filter /vendor/bin/wcnss_filter
     class late_start
     user root
     group bluetooth diag system wakelock diag log
-    seclabel u:r:bluetooth:s0
+    #seclabel u:r:bluetooth:s0
     disabled
 
 on property:vendor.wc_transport.start_hci=true
