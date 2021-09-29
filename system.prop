@@ -5,3 +5,6 @@
 ro.kernel.ebpf.supported=false
 ro.vndk.version=current
 debug.renderengine.backend=threaded
+ro.soc.manufacturer=QTI
+ro.soc.model=MSM8953
+persist.sys.binary_xml=false
