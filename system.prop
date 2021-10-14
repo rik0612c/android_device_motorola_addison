@@ -4,3 +4,4 @@
 
 ro.kernel.ebpf.supported=false
 ro.vndk.version=current
+debug.renderengine.backend=threaded
