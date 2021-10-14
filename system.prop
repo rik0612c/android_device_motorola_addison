@@ -1,0 +1,5 @@
+#
+# system.prop for addison
+#
+
+ro.kernel.ebpf.supported=false

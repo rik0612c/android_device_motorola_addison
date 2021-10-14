@@ -131,6 +131,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_HAS_NO_WLAN_STATS := true
 BOARD_POWER_CUSTOM_BOARD_LIB := libpower_8953
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/root/fstab.qcom
 
