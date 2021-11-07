@@ -3,3 +3,4 @@
 #
 
 ro.kernel.ebpf.supported=false
+ro.vndk.version=current
