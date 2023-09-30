@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_addison.mk
+    $(LOCAL_DIR)/aosp_addison.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_addison-user \
-    lineage_addison-userdebug \
-    lineage_addison-eng
+    aosp_addison-user \
+    aosp_addison-userdebug \
+    aosp_addison-eng

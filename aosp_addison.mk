@@ -14,27 +14,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-# Inherit from device product
-$(call inherit-product, device/motorola/addison/full_addison.mk)
-
-# Inherit from core products - Most specific first
+# Inherit from those products - Most specific first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Boot Animation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_BOOTANIMATION_HALF_RES := true
+# Inherit from device product
+$(call inherit-product, device/motorola/addison/device.mk)
+
+# Inherit some common pixelexperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier - This must come after all inclusions
 PRODUCT_DEVICE := addison
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_MODEL := Moto Z Play
-PRODUCT_NAME := lineage_addison
+PRODUCT_NAME := aosp_addison
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
-
-BUILD_FINGERPRINT := "motorola/addison_retail/addison:8.0.0/OPNS27.76-12-22-9/10:user/release-keys"
