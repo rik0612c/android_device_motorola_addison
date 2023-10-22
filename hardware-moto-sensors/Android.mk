@@ -161,6 +161,8 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
             endif
         endif
 
+        LOCAL_SHARED_LIBRARIES += libbase
+
         # This file must be last, for some mysterious reason
         LOCAL_SRC_FILES += \
             $(SH_PATH)/SensorsPollContext.cpp
